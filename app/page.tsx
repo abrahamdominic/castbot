@@ -3,8 +3,15 @@ import { useState } from "react";
 import Image from "next/image";
 import { postCast } from "./farcaster/client";
 import { ConnectWallet } from "./components/ConnectWallet";
+import { sdk } from '@farcaster/miniapp-sdk';
+import { useEffect } from 'react';
 
 export default function Home() {
+  //calling ready on sdk initialization(Farcaster Mini App SDK)
+  useEffect(() => {
+        sdk.actions.ready();
+    }, []);
+    //end of sdk ready call
   const [post, setPost] = useState("");
   const [isCasting, setIsCasting] = useState(false);
   const [isGenerating, setIsGenerating] = useState(false);
