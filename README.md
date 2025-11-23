@@ -1,26 +1,54 @@
+# Castbot
+
+AI-powered content generation for Farcaster.
+
 ## Getting Started
 
-First, run the development server:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+You need to have Node.js and npm installed on your machine.
+
+### Installing
+
+1.  Clone the repo
+2.  Install NPM packages
+
+```bash
+npm install
+```
+
+3.  Set up your environment variables. Create a `.env.local` file in the root of your project and add the following:
+
+```
+# Farcaster API Key
+FARCASTER_API_KEY=your_farcaster_api_key
+```
+
+4.  Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Wallet Integration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses `wagmi` and `viem` for wallet integration. You will need to have a wallet extension like MetaMask installed in your browser to connect to the application.
 
+## How to use
 
-## Deploy on Vercel
+1.  Enter a prompt in the text area.
+2.  Click the "Generate" button to generate AI content.
+3.  Click the "Cast" button to post the content to Farcaster.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Built With
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   [Next.js](https://nextjs.org/) - The React Framework for Production
+*   [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
+*   [Wagmi](https://wagmi.sh/) - React Hooks for Ethereum
+*   [Viem](https://viem.sh/) - TypeScript Interface for Ethereum
+*   [Farcaster](https://www.farcaster.xyz/) - A sufficiently decentralized social network
+
