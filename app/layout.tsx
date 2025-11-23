@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import { headers } from "next/headers";
-import { cookieToInitialState } from "wagmi/server";
 import { config } from "./config";
 
 const geistSans = Geist({
@@ -21,12 +20,13 @@ export const metadata: Metadata = {
   description: "AI-powered content generation for Farcaster",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialState = cookieToInitialState(config, headers().get("cookie"));
+  const initialState = undefined;
   return (
     <html lang="en">
       <body
