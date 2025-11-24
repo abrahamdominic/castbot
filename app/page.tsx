@@ -61,7 +61,7 @@ export default function Home() {
               priority
             />
             <h1 className="text-xl font-bold tracking-tight text-black dark:text-zinc-50">
-              Castbot
+              Prompt Caster 
             </h1>
           </div>
           <ConnectWallet />
