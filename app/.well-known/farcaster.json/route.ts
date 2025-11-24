@@ -31,10 +31,10 @@ return Response.json({
       "https://ex.co/s3.png"
     ],
     "primaryCategory": "social",
-    "tags": ["example", "miniapp", "baseapp"],
+    "tags": ["Ai", "miniapp", "baseapp"],
     "heroImageUrl": "https://ex.co/og.png",
-    "tagline": "Play instantly",
-    "ogTitle": "Example Mini App",
+    "tagline": "Cast instantly",
+    "ogTitle": "Prompt Caster Mini App",
     "ogDescription": "Challenge friends in real time.",
     "ogImageUrl": "https://ex.co/og.png",
     "noindex": true
