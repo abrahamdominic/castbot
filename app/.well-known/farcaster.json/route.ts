@@ -18,7 +18,7 @@ return Response.json({
   "miniapp": {
     "version": "1",
     "name": "Prompt Caster Mini App",
-    "homeUrl": "https://ex.co",
+    "homeUrl": "https://promptcaster.vercel.app",
     "iconUrl": "https://ex.co/i.png",
     "splashImageUrl": "https://ex.co/l.png",
     "splashBackgroundColor": "#000000",
